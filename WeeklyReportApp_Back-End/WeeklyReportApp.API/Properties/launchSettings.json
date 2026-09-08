@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "WeeklyReportApp.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:52757;http://localhost:52758"
+    }
+  }
+}
