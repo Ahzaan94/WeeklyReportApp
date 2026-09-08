@@ -32,21 +32,21 @@ Each folder has its own README with more detail. Quick start below.
 ## 1. Install Dependencies
 
 ```bash
-# Backend
-cd backend/WeeklyReportApp.API
+# WeeklyReportApp_Back-End
+cd WeeklyReportApp_Back-End/WeeklyReportApp.API
 dotnet restore
 
-# Frontend
-cd frontend
+# WeeklyReportApp_Front-End
+cd WeeklyReportApp_Front-End
 npm install
 ```
 
 ## 2. Run the Database
 
-Update the connection string in `backend/WeeklyReportApp.API/appsettings.json` to point at your SQL Server instance, then create the database:
+Update the connection string in `WeeklyReportApp_Back-End/WeeklyReportApp.API/appsettings.json` to point at your SQL Server instance, then create the database:
 
 ```bash
-cd backend/WeeklyReportApp.API
+cd WeeklyReportApp_Back-End/WeeklyReportApp.API
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
@@ -54,15 +54,15 @@ dotnet ef database update
 ## 3. Run the Backend
 
 ```bash
-cd backend/WeeklyReportApp.API
+cd WeeklyReportApp_Back-End/WeeklyReportApp.API
 dotnet run
 ```
-API runs at `https://localhost:5001` (Swagger at `/swagger`). Demo data (manager, team members, projects, sample reports) is seeded automatically on first run.
+API runs at `https://localhost:52757` (Swagger at `/swagger`). Demo data (manager, team members, projects, sample reports) is seeded automatically on first run.
 
 ## 4. Run the Frontend
 
 ```bash
-cd frontend
+cd WeeklyReportApp_Front-End
 cp .env.example .env
 npm run dev
 ```
